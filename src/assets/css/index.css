@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #232323;
+}
+
+primary-color{
+  color: #816FEF;
+}
+
+secondary-color{
+  color: #232323;
+}
+
+metamask-color{
+  color: #EE811A;
+}
+
+text-bold-24-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+text-semibold-48-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+text-semibold-24-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+text-regular-32-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+text-regular-24-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+text-regular-17-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+text-regular-14-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+text-light-18-rosario {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+text-medium-14-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+text-regular-16-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+text-light-18-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+text-light-14-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+text-light-italic-14-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+}
+
