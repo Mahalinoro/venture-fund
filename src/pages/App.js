@@ -13,7 +13,7 @@ import { CROWDFUNDING_ABI, CROWDFUNDING_ADDRESS } from '../config';
 import React from "react";
 import Web3 from 'web3';  
 
-const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
+const web3 = new Web3(Web3.givenProvider);
 const crowdfunding = new web3.eth.Contract(CROWDFUNDING_ABI, CROWDFUNDING_ADDRESS);
 
 function App(){
@@ -38,8 +38,8 @@ class Home extends React.Component {
 
   componentDidMount(){
     this.getProjects()
-    this.checkFundingStatus()
   }
+  
 
   async getProjects(){
     const projectCount = await crowdfunding.methods.getProjectsCount().call();
@@ -50,14 +50,6 @@ class Home extends React.Component {
         this.setState({projects: [...this.state.projects, project], statuses: [...this.state.statuses, status]})
     }
     console.log(this.state.statuses)
-  }
-
-  async checkFundingStatus(){
-    for (var i = 0; i <= this.state.count; i++) {
-        await crowdfunding.methods.checkFundingStatus(i).send()
-        const status = await crowdfunding.methods.projectToState(i).call()
-        this.setState({statuses: [...this.state.statuses, status]})
-    }
   }
 
   render() {
